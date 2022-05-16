@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>ListAshop</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css"> 
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+           	<div class="top_menu row m0">
+           		<div class="container">
+					<div class="float-left">
+						<a href="mailto:danilscheglov2637@gmail.com">danilscheglov2637@gmail.com</a>
+						<a href="#">Добро пожаловать!</a>
+					</div>
+					<div class="float-right">
+						<ul class="header_social">
+							<li><a href="https://vk.com/id_broken.arrow"><i class="fa fa-vk"></i></a></li>
+							<li><a href="https://www.instagram.com/all_0r_n0thin9/"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+           		</div>	
+           	</div>	
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light main_box">
+					<div class="container">
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" width="200" height="68" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Услуги</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+										<li class="nav-item"><a class="nav-link" href="https://disk.yandex.ru/d/hw1sQz1c9LFxzQ" target="_ blank">Примеры фото</a></li>
+										<li class="nav-item"><a class="nav-link" href="https://disk.yandex.ru/d/HPZ4pkOdSuaSKw" target="_ blank">Примеры видео</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="contact.html">Информация</a></li>
+							    <li class="nav-item"><a class="nav-link" href="login.html">Авторизация</a></li>
+							</ul>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+       
+        
+        <!--================Single Product Area =================-->
+        <div class="product_image_area">
+        	<div class="container">
+        		<div class="row s_product_inner">
+        			<div class="col-lg-6">
+        				<div class="s_product_img">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="img/product/feature-product/f-p-1.jpg" alt="First slide">
+									</div>
+								</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-5 offset-lg-1">
+        				<div class="s_product_text">
+        					<h3>DJI Ronin S</h3>
+        					<h2>₽3300/сутки</h2>
+        					
+        					<p>The DJI Ronin-S is a superior 3-axis stabilization system for DSLR and mirrorless cameras that features a 3.6 kg tested payload capacity, camera control.</p>
+        					<div class="product_count">
+        						<label for="qty">Количество: </label>
+								<input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+								<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;" class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+								<button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp, amp, sst > 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+							</div>
+        					<div class="card_area">
+        						<a class="main_btn" href="#">Добавить в корзину</a>
+        						
+        						<button class="like__btn">
+									<span id="icon"><i class="lnr lnr-heart"></i></span>
+									<span id="count">0</span>
+								</button>
+								<script>
+								const likeBtn = document.querySelector(".like__btn");
+									let likeIcon = document.querySelector("#icon"),
+									  count = document.querySelector("#count");
+									
+									let clicked = false;
+						
+									likeBtn.addEventListener("click", () => {
+									  if (!clicked) {
+										clicked = true;
+										likeIcon.innerHTML = `<i class="lnr lnr-heart"></i>`;
+										count.textContent++;
+									  } else {
+										clicked = false;
+										likeIcon.innerHTML = `<i class="lnr lnr-heart"></i>`;
+										count.textContent--;
+									  }
+									});
+								</script>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <!--================End Single Product Area =================-->
+        
+        <!--================Product Description Area =================-->
+        <section class="product_description_area">
+        	<div class="container">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+					<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Описание</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Характеристики</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Комментарии</a>
+					</li>
+					
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+						<p>The DJI Ronin-S is a superior 3-axis stabilization system for DSLR and mirrorless cameras that features a 3.6 kg tested payload capacity, camera control.</p>
+						<p>Cтабилизатор Ronin-S разработан специально для зеркальных и беззеркальных камер. Высокое качество стабилизации, точное управление камерой и настройка фокуса в одном компактном устройстве, которое можно удерживать одной рукой. Ronin-S дарит свободу движения и непревзойденную стабилизацию изображения.</p>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td>
+											<h5>
+												Грузоподъемность (опорное значение)</h5>
+										</td>
+										<td>
+											<h5>3,6кг</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Диапазон угловых вибраций</h5>
+										</td>
+										<td>
+											<h5>±0,02°</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Макс. управляемая угловая скорость</h5>
+										</td>
+										<td>
+											<h5>Крен: 360°/с</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Механический диапазон углов вращения</h5>
+										</td>
+										<td>
+											<h5>Наклон: +205°...-115°</h5>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Рабочий диапазон углов вращения	</h5>
+										</td>
+										<td>
+											<h5>Поворот: 360° </h5>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="row">
+							
+							<div class="col-lg-6">
+								<div id="comment-field"></div>
+							</div>
+							<div class="col-lg-6">
+								<div class="review_box">
+									<h4>Оставить комментарий</h4>
+									<form class="row contact_form" id="contactForm" novalidate="novalidate">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="comment-name" name="name" placeholder="Полное имя">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="email" class="form-control" id="email" name="email" placeholder="Email адрес">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="number" name="number" placeholder="Номер телефона">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" name="message" id="comment-body" rows="1" placeholder="Сообщение"></textarea>
+											</div>
+										</div>
+										<div class="col-md-12 text-right">
+											<button type="submit" id="comment-add" value="submit" class="btn submit_btn">Опубликовать</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+        	</div>
+        </section>
+        <!--================End Product Description Area =================-->
+        
+        
+        
+        <!--================ start footer Area  =================-->	
+ <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <a href="https://vk.com/id_broken.arrow"><h6 class="footer_title">О нас:</h6></a>
+                            <p>Будем рады с вами познакомиться!</p>
+                        </div>
+                    </div>
+                   <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Написать нам:</h6>
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>									
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="single-footer-widget f_social_wd">
+                            <h6 class="footer_title">Связаться с нами:</h6>
+                            <p>Наши соц. сети</p>
+                            <div class="f_social">
+								<a href="https://vk.com/id_broken.arrow"><i class="fa fa-vk"></i></a>
+								<a href="https://www.instagram.com/all_0r_n0thin9/"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>						
+                </div>
+            </div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="vendors/jquery-ui/jquery-ui.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.js"></script>
+        <script src="js/theme.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    	<script src="comment.js"></script>
+    </body>
+</html>
